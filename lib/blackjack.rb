@@ -40,12 +40,13 @@ def hit?(current_total)
     current_total
   elsif player_input != 's' || player_input != 'h'
       invalid_command
+      prompt_user
+      get_user_input
   end
 end
 
 def invalid_command
   puts "Please enter a valid command"
-  prompt_user
 end
 
 #####################################################
