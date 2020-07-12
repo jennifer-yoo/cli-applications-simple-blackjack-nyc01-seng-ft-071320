@@ -32,12 +32,12 @@ end
 
 def hit?(current_total)
   prompt_user
-  get_user_input
-  if get_user_input == 'h'
+  player_input = get_user_input
+  if player_input == 'h'
     deal_card
     new_card_num = deal_card
     current_total += new_card_num
-    if get_user_input != 's' || get_user_input != 'h'
+    if player_input != 's' || player_input != 'h'
       invalid_command
     end
   end
