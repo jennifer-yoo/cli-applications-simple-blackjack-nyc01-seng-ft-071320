@@ -42,9 +42,7 @@ def hit?(current_total)
       invalid_command
       prompt_user
       get_user_input
-    end
   end
-  current_total
 end
 
 def invalid_command
